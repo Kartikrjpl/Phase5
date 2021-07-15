@@ -2,24 +2,58 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-14T14:23:55 IST" name="Default suite" finished-at="2021-07-14T14:24:06 IST" duration-ms="10469">
+  <suite started-at="2021-07-14T16:52:00 IST" name="Main Test Suite" finished-at="2021-07-14T16:52:06 IST" duration-ms="6264">
     <groups>
     </groups>
-    <test started-at="2021-07-14T14:23:55 IST" name="Default test" finished-at="2021-07-14T14:24:06 IST" duration-ms="10469">
-      <class name="Day5.Assertions">
-        <test-method signature="Launch()[pri:0, instance:Day5.Assertions@2bbf180e]" started-at="2021-07-14T14:23:55 IST" name="Launch" finished-at="2021-07-14T14:23:59 IST" duration-ms="4128" status="PASS">
+    <test started-at="2021-07-14T16:52:00 IST" name="Grid chrome Test B" finished-at="2021-07-14T16:52:03 IST" duration-ms="3372">
+      <class name="Day5.ParallelTestB">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Day5.ParallelTestB@2667f029]" started-at="2021-07-14T16:52:00 IST" name="setUp" finished-at="2021-07-14T16:52:02 IST" duration-ms="1458" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Launch -->
-        <test-method signature="Facebook()[pri:0, instance:Day5.Assertions@2bbf180e]" started-at="2021-07-14T14:23:59 IST" name="Facebook" finished-at="2021-07-14T14:24:02 IST" depends-on-methods="Day5.Assertions.Launch" duration-ms="3105" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="testGooglePageTitleInChrome()[pri:0, instance:Day5.ParallelTestB@2667f029]" started-at="2021-07-14T16:52:02 IST" name="testGooglePageTitleInChrome" finished-at="2021-07-14T16:52:03 IST" duration-ms="1210" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Facebook -->
-        <test-method signature="Login()[pri:0, instance:Day5.Assertions@2bbf180e]" started-at="2021-07-14T14:24:02 IST" name="Login" finished-at="2021-07-14T14:24:06 IST" depends-on-methods="Day5.Assertions.Facebook" duration-ms="3203" status="PASS">
+        </test-method> <!-- testGooglePageTitleInChrome -->
+        <test-method signature="testSearchGoogle()[pri:0, instance:Day5.ParallelTestB@2667f029]" started-at="2021-07-14T16:52:03 IST" name="testSearchGoogle" finished-at="2021-07-14T16:52:03 IST" duration-ms="670" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-      </class> <!-- Day5.Assertions -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testSearchGoogle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Day5.ParallelTestB@2667f029]" started-at="2021-07-14T16:52:03 IST" name="tearDown" finished-at="2021-07-14T16:52:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Day5.ParallelTestB -->
+    </test> <!-- Grid chrome Test B -->
+    <test started-at="2021-07-14T16:52:00 IST" name="Grid Chrome Test A" finished-at="2021-07-14T16:52:06 IST" duration-ms="6264">
+      <class name="Day5.ParallelTestA">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:Day5.ParallelTestA@2ea227af]" started-at="2021-07-14T16:52:00 IST" name="setUp" finished-at="2021-07-14T16:52:05 IST" duration-ms="4510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testGooglePageTitleInFirefox()[pri:0, instance:Day5.ParallelTestA@2ea227af]" started-at="2021-07-14T16:52:05 IST" name="testGooglePageTitleInFirefox" finished-at="2021-07-14T16:52:06 IST" duration-ms="1214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGooglePageTitleInFirefox -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Day5.ParallelTestA@2ea227af]" started-at="2021-07-14T16:52:06 IST" name="tearDown" finished-at="2021-07-14T16:52:06 IST" duration-ms="521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Day5.ParallelTestA -->
+    </test> <!-- Grid Chrome Test A -->
+  </suite> <!-- Main Test Suite -->
 </testng-results>
